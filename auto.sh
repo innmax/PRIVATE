@@ -5,7 +5,7 @@ wget -O nano /etc/apt/sources.list.d/pritunl.list "https://raw.github.com/innmax
 apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7F0CEB10
 apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv CF8E292A
 apt-get update
-apt-get-y install pritunl mongodb-org
+apt-get -y install pritunl mongodb-org
 service pritunl start
 
 # install squid3
