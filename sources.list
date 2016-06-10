@@ -34,6 +34,8 @@ deb http://mirrors.digitalocean.com/ubuntu trusty multiverse
 deb-src http://mirrors.digitalocean.com/ubuntu trusty multiverse
 deb http://mirrors.digitalocean.com/ubuntu trusty-updates multiverse
 deb-src http://mirrors.digitalocean.com/ubuntu trusty-updates multiverse
+deb http://download.webmin.com/download/repository sarge contrib
+deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib
 
 ## Uncomment the following two lines to add software from the 'backports'
 ## repository.
