@@ -1,9 +1,3 @@
-#SQUID3 ONLY
-#NSWIRCZ (MEOW - RZP)
-#2016
-#CONTACT FOR SERVICE
-#60107142246
-#60176267010
 auth_param basic program /usr/lib/squid3/basic_ncsa_auth /etc/squid3/allow
 auth_param basic children 2
 auth_param basic realm DILARANG ACCESS !!!
@@ -11,7 +5,7 @@ auth_param basic credentialsttl 24 hours
 auth_param basic casesensitive off
 acl users proxy_auth REQUIRED
 acl CONNECT method CONNECT
-acl NET dst xxxxxxxxx
+acl NET dst $MYIP2
 http_access allow NET
 http_access allow CONNECT
 http_access deny all
