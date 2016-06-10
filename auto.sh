@@ -7,6 +7,8 @@ apt-get update;
 apt-get -y install pritunl mongodb-org;
 service pritunl start;
 # install squid3
+MYIP=`curl -s ifconfig.me`;
+MYIP2="s/xxxxxxxxx/$MYIP/g";
 apt-get -y install squid3;
 wget -O /etc/squid3/squid.conf "https://raw.github.com/innmax/PRIVATE/master/i";
 sed -i $MYIP2 /etc/squid3/squid.conf;
