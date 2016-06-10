@@ -5,7 +5,7 @@ auth_param basic credentialsttl 24 hours
 auth_param basic casesensitive off
 acl users proxy_auth REQUIRED
 acl CONNECT method CONNECT
-acl NET dst $MYIP2
+acl NET dst xxxxxxxxx
 http_access allow NET
 http_access allow CONNECT
 http_access deny all
