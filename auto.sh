@@ -12,4 +12,9 @@ apt-get -y install squid3;
 wget -O /etc/squid3/squid.conf "https://raw.github.com/innmax/PRIVATE/master/i";
 sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart;
+echo "install pritunl complete"
+echo "install mogodb complete"
+echo "install squid3 complete"
+echo "login to https://ip:443"
+echo "pritunl key kat bawah ni copy dan paste"
 pritunl setup-key;
