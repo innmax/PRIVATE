@@ -22,8 +22,6 @@ echo "install mogodb complete"
 echo "install squid3 complete"
 service squid3 restart;
 echo "install webmin complete"
-echo "install vnstat complete"
-service vnstat restart
 echo "login to pritunl https://ip:443"
 echo "login to webmin https://ip:10000"
 echo "pritunl key kat bawah ni copy dan paste"
