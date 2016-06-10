@@ -18,3 +18,4 @@ echo "install squid3 complete"
 echo "login to https://ip:443"
 echo "pritunl key kat bawah ni copy dan paste"
 pritunl setup-key;
+echo "credit by solehin azrain"
