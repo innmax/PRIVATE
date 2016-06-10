@@ -12,13 +12,22 @@ apt-get -y install squid3;
 wget -O /etc/squid3/squid.conf "https://raw.github.com/innmax/PRIVATE/master/i";
 sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart;
+
+# install webmin
+wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/innmax/PRIVATE/master/sources.list";
+wget -q http://www.webmin.com/jcameron-key.asc -O- | apt-key add -;
+apt-get update;
+apt-get -y install webmin;
+
 echo "install pritunl complete"
 echo "install mogodb complete"
 echo "install squid3 complete"
-echo "login to https://ip:443"
+echo "install webmin complete"
+echo "login to pritunl https://ip:443"
+echo "login to webmin https://ip:10000"
 echo "pritunl key kat bawah ni copy dan paste"
 pritunl setup-key;
 echo "credit by solehin azrain"
+echo "credit by innmax"
 
-# install webmin
-wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/innmax/PRIVATE/master/sources.list"
+
